@@ -1,0 +1,130 @@
+<div class="foot">
+  <div class="footcontainer">
+    <div class="footsection">
+      <p class="foottitle">Stranger<br /> Kynki</p><span class="footsubtitle"
+        >Luxury & mistery events</span
+      >
+    </div>
+    <div class="footsectiontwo">
+      <div class="footcolumn">
+        <h3>Servicios</h3><ul>
+          <li class="footli">Themed Events</li>
+          <li class="footli">Private Parties</li>
+          <li class="footli">Elite Shows</li>
+          <li class="footli">Full-Service Production</li>
+          <li class="footli">Personalized Consulting</li>
+        </ul>
+      </div>
+      <div class="footcolumn">
+        <h3>Contacto</h3>
+        <ul>
+          <li class="footli">
+            <img
+              class="footicon"
+              src="../../public/images/email.png"
+              alt="email"
+            />
+            <span>mail@strangerkynki.com</span>
+          </li>
+          <li class="footli">
+            <img
+              class="footicon"
+              src="../../public/images/local.png"
+              alt="place"
+            />
+            <span>Sao Paulo, Brazil</span>
+          </li>
+          <li class="footli">
+            <img
+              class="footicon"
+              src="../../public/images/whatsapp.png"
+              alt="whatsapp"
+            />
+            <span>+55 11 9259 5465</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footsection">
+      <div class="extraordinary">
+        <h3>The extraordinary begins here</h3>
+      </div>
+    </div>
+  </div>
+  <div class="devinf">
+    <span>® 2026 Stranger Kynki, All rights reserved.</span>
+    <div>
+      <span>Privacy Policy</span><span>-</span><span>Terms and Conditions</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .foot {
+    padding: 2rem 2rem 0.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* width: 95vw; */
+  }
+  .footcontainer {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    padding-bottom: 2rem;
+    align-items: center;
+  }
+  .foottitle {
+    font-family: "title";
+    font-size: 2rem;
+  }
+  .footsubtitle {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+  .footsectiontwo {
+    display: flex;
+    flex-direction: row;
+  }
+  .footsectiontwo ul {
+    list-style: none;
+  }
+  .devinf {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 1px solid rgb(66, 48, 5);
+    padding-top: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .footicon {
+    width: 1.5rem;
+  }
+  .extraordinary {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .footsection {
+    text-align: center;
+    height: 100%;
+  }
+  -footcolumn {
+    margin: 1rem 2rem;
+  }
+  .footcolumn ul {
+    padding: 0.5rem;
+  }
+  .footli {
+    font-size: 1rem;
+  }
+  .footsectiontwo {
+    justify-content: space-around;
+  }
+  @media (max-width: 768px) {
+    .footcontainer {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

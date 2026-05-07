@@ -1,0 +1,70 @@
+---
+
+---
+
+<div class="events">
+  <h2 class="eventstitle">EVENTS</h2>
+  <div class="eventsbanner">
+    <h2 class="bannerquote">
+      “We don’t organize events. <br />We create memories.”
+    </h2>
+    <img class="bannerimg" src="../../public/images/woman.png" alt="memories" />
+  </div>
+  <p class="eventstext">
+    Our events are private, curated and intentionally limited. Each experience
+    is designed to operate beyond entertainment, creating environments of
+    immersion, tension and desire. Access is not open. It is defined.
+  </p>
+</div>
+
+<style>
+  .events {
+    display: flex;
+    flex-direction: column;
+    background-color: #0c0c09;
+    justify-content: center;
+    align-items: center;
+  }
+  .eventstitle {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: red;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+  .eventstitle::after {
+    content: "";
+    width: 4rem;
+    height: 1px;
+    background: currentColor;
+  }
+  .eventsbanner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 8rem;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../public/images/humo.jpg");
+    overflow: hidden;
+  }
+  .bannerquote {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1vw;
+    line-height: 2.5rem;
+  }
+  .bannerimg {
+    height: 10rem;
+  }
+  .eventstext {
+    margin: 4rem 0;
+    font-size: 1.3rem;
+    text-align: justify;
+    width: 70vw;
+    margin-bottom: 5rem;
+  }
+</style>

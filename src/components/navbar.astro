@@ -1,0 +1,102 @@
+---
+
+---
+
+<nav>
+  <h1 class="navtitle">Stranger<br />Kynki</h1>
+
+  <button class="menu-toggle" aria-label="Abrir menú"> ☰ </button>
+
+  <ul class="nav-menu">
+    <li class="nav-opt"><a href="/" data-astro-prefetch>Home</a></li>
+    <li class="nav-opt"><a href="/about" data-astro-prefetch>About</a></li>
+    <li class="nav-opt">
+      <a href="/services" data-astro-prefetch> Services </a>
+    </li>
+    <li class="nav-opt">
+      <a href="/events" data-astro-prefetch>Events</a>
+    </li>
+    <li class="nav-opt"><button>Contact</button></li>
+  </ul>
+</nav>
+
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".nav-menu");
+
+  if (toggle && menu) {
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  }
+</script>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    justify-content: space-around;
+  }
+
+  .navtitle {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .nav-menu {
+    color: var(--color-gold);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-opt {
+    margin: 0 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3;
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* MOBILE */
+
+  @media (max-width: 1024px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    .nav-menu {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background: black;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .nav-menu.active {
+      max-height: 400px;
+    }
+
+    .nav-opt {
+      margin: 1rem 0;
+    }
+  }
+</style>

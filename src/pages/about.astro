@@ -1,0 +1,63 @@
+---
+
+---
+
+<div class="about">
+  <img class="aboutimg" src="../../public/images/about.jpeg" alt="about" />
+  <div class="content">
+    <h2 class="linedeco">ABOUT US</h2>
+    <span class="creamos">WE CREATE THE EXTRAORDINARY</span>
+    <p class="abouttext">
+      Founded by Giselle Said, creator of Stranger Kynki, the company is built
+      on more than two decades of experience in creative direction, production
+      and cultural curation, with projects for global brands such as Heineken,
+      Netflix, Adidas, Coca-Cola, Nike and Red Bull, alongside international
+      work with agencies across Argentina, Chile, Peru and Mexico.
+    </p>
+    <p class="abouttext">
+      We create proprietary events through a sensory logic where sound, light,
+      rhythm, flow and behavior operate as a unified system. Our work does not
+      replicate existing models. It establishes new territories.
+    </p>
+    <!-- <button>discover more</button> -->
+  </div>
+</div>
+
+<style>
+  .about {
+    background-color: #0c0c09;
+    display: flex;
+    padding: 5rem;
+  }
+  .aboutimg {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+  }
+  .content {
+    margin: 1rem 5rem;
+    width: 50%;
+  }
+  .linedeco {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: red;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+  .linedeco::after {
+    content: "";
+    width: 4rem;
+    height: 1px;
+    background: currentColor;
+  }
+  .creamos {
+    font-size: 4rem;
+  }
+  .abouttext {
+    margin: 2rem 0;
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+</style>
