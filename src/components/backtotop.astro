@@ -1,0 +1,75 @@
+<button id="backToTop" aria-label="Volver arriba"></button>
+
+<script>
+  const button = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      button?.classList.add("show");
+    } else {
+      button?.classList.remove("show");
+    }
+  });
+
+  button?.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+</script>
+
+<style>
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: var(--color-gold);
+    color: black;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(20px);
+
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease,
+      visibility 0.3s;
+
+    z-index: 999;
+    background-image: url("./images/arriba.png");
+    background-size: contain;
+  }
+
+  #backToTop.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  #backToTop:hover {
+    transform: scale(1.08);
+  }
+
+  @media (max-width: 768px) {
+    #backToTop {
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+</style>

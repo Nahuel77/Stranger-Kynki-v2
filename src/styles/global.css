@@ -1,6 +1,10 @@
 *{margin: 0;
 padding: 0;}
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face{
     font-family: "title";
     src: url("../../public/fonts/vogue/Vogue.ttf") format("truetype");
