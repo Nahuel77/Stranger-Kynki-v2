@@ -13,8 +13,8 @@ html {
 
 @font-face {
     font-family: "playfair";
-    src: url("../../public/fonts/playfair/PlayfairDisplay-VariableFont_wght.ttf");
-    font-weight: 500;
+    src: url("../../public/fonts/playfair/Lexend_Giga/LexendGiga-VariableFont_wght.ttf");
+    font-weight: 200;
 }
 
 body{
