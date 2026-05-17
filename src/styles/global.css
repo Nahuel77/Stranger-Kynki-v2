@@ -36,6 +36,13 @@ a{
     text-decoration: none;
     font-family: "playfair";
     color: white;
+    transition: .5s;
+    cursor: pointer;
+
+}
+a:hover{
+    color: #870900;
+    transition: .5s;
 }
 
 button{
